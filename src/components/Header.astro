@@ -1,0 +1,30 @@
+---
+import "../styles/global.scss";
+import { SiteTitle } from "../consts";
+---
+
+<header>
+  <nav>
+    <h2 id="site_title">
+      <a href="/">
+        <img
+          src="/src/assets/sauna-person.svg"
+          alt="Sauna Person"
+          style="vertical-align: middle; height: 4em; margin-right: 0.5em;"
+          loading="lazy"
+          fetchpriority="high"
+        />
+        {SiteTitle}
+      </a>
+    </h2>
+    <div class="links">
+      <a href="mailto:contactus@yourwebsite.com">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .links a {
+    text-decoration: none;
+  }
+</style>
